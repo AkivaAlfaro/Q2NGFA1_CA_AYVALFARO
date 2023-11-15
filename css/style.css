@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    background-color: #ffa62b;
+    color: white;
+}
+.links a{
+    padding-left: 1vw;
+}
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+    }
+    .pagetitle{
+        background-color: indianred;
+        padding: 1vw;
+        color: black;
+    }
+    .links{
+        display:none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 4px 0px 8px gold;
+        z-index: 1;
+        background-color:#ffa86b;
+    }
+    .links a{
+        color: black;
+        padding: 12px 16px;
+        display: block;
+    }
+    .links a:hover{
+        background-color: deeppink;
+    }
+    nav:hover .links{
+        display: block;
+    }
+    nav:hover .pagetitle{
+        background-color:firebrick;
+    }
+}
